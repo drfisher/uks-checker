@@ -1,0 +1,28 @@
+{
+	"name" : "«УКС — Озерск»",
+	"version" : "1.2.4",
+	"description" : "Официальное расширение для абонентов ООО «Уральские кабельные сети — Озерск»",
+	"background_page": "background.html",
+	"options_page": "options.html",
+	"browser_action": {
+		"default_icon": "images/icon16.png",
+		"default_popup": "popup.html"
+	},
+	"content_scripts": [{
+		"matches": [
+			"http://www.ozersk.net/*"
+		],
+		"js": ["profile_page.js"],
+		"run_at": "document_idle"
+	}],
+	"permissions": [
+		"tabs",
+		"http://www.ozersk.net/*"
+	],
+	"icons" : {
+		"16" : "images/icon16.png",
+		"32" : "images/icon32.png",
+		"48" : "images/icon48.png",
+		"128" : "images/icon128.png"
+	}
+}

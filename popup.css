@@ -1,0 +1,132 @@
+body {
+	background-color: #fff;
+	color: #222;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+}
+
+#preloader {
+	height: 100px;
+	width: 100px;
+}
+	#preloader img {
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		top: 31px;
+	}
+
+#content_wrap {
+	display: none;
+	margin: 1.5em 3em;
+	width: 350px;
+}
+	h1 {
+		color: #3d332a;
+		font-size: 18px;
+		font-weight: normal;
+		line-height: 1.5em;
+		margin: 0 0 0.5em 0;
+		padding: 0;
+	}
+		h1 a {
+			color: #3d332a;
+			text-decoration: none;
+		}
+		h1 a:hover {color: #000;}
+	p {margin: 0 0 1.5em 0;}
+	.money {
+		font-size: 18px;
+		line-height: 18px;
+	}
+		.money.green {color: #56ad2b;}
+		.money.red {color: #f9a200;}
+	ul {
+		margin: 0 0 1.5em 1.5em;
+		padding: 0;
+	}
+		ul span.new_post {
+			color: #fff;
+			background-color: #f9a200;
+			border-radius: 4px;
+			font-size: 11px;
+			font-style: italic;
+			margin-left: 3px;
+			padding: 0 4px 0 3px;
+		}
+	a {color: #73604f;}
+	a:hover {color: #f9a200;}
+
+#activation_form {
+	background: #fff 50% 50% no-repeat;
+	border-radius: 6px;
+	display: none;
+	padding: 1.5em;
+	position: absolute;
+	-webkit-box-shadow: 0px 0px 9px #000;
+	width: 145px;
+	z-index: 9;
+}
+	#activation_form h2 {
+		font-size: 14px;
+		line-height: 18px;
+		margin: 0 0 9px 0;
+		padding: 0;
+		text-align: left;
+	}
+		#activation_form h2.green {
+			color:#56ad2b;
+			text-align: center;
+		}
+		#activation_form h2.red {
+			color: #f9a200;
+			text-align: center;
+		}
+	#activation_form label {
+		color: #908f8a;
+		display: block;
+		font-size: 10px;
+		line-height: 10px;
+		margin: 0 0 2px;
+	}
+		#activation_form label span {color: #444;}
+	#activation_form .text_field,
+	#activation_form .day_select {
+		border: 1px solid #42423d;
+		display: block;
+		margin: 0 0 6px;
+		padding: 0;
+		width: 144px;
+	}
+
+	#activation_form input.button {
+		margin: 9px 6px 0 0;
+	}
+
+#cover,
+#mini-cover {
+	background-color: #fff;
+	height: 100%;
+	opacity: 0.8;
+	position: absolute;
+	width: 100%;
+}
+#mini-cover {opacity: 1;}
+
+#footer {
+	color: #bbb;
+	font-size: 11px;
+	line-height: 18px;
+	margin: 0 0 0 2px;
+}
+	#footer span {
+		color: #73604f;
+		cursor: pointer;
+		text-decoration: underline;
+	}
+	#footer span:hover {color: #f9a200;}
+
+
