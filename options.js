@@ -1,17 +1,17 @@
 //  инициализация
 function init(){
-	
+
 	//  позиционирование
 	layout_to_center();
 	window.onresize = layout_to_center;
-	
+
 	//  заполнение параметрами из localStorage
 	var showBalance = $('#showBalance'),
 		newsNumber = $('#newsNumber');
 	if(localStorage['showBalance'] == 'true') showBalance.attr('checked', true);
 	newsNumber.val(localStorage['newsNumber']);
 	newsNumLabel(localStorage['newsNumber']);
-	
+
 	//  изменение настроек:
 	//  отображение баланса
 	showBalance.bind('click', function(){
@@ -63,12 +63,12 @@ function newsNumLabel(val){
 	switch(val){
 		case '1':
 			$('#newsNumber_lable').text('штуку');
-			break
+			break;
 		case '2':
 		case '3':
 		case '4':
 			$('#newsNumber_lable').text('штуки');
-			break
+			break;
 		default:
 			$('#newsNumber_lable').text('штук');
 	}
