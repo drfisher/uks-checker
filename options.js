@@ -15,7 +15,12 @@ function init(){
 	//  изменение настроек:
 	//  отображение баланса
 	showBalance.bind('click', function(){
-		localStorage['showBalance'] = showBalance.attr('checked');
+		if ( showBalance.attr('checked') == 'checked' ){
+			localStorage['showBalance'] = true;
+		} else {
+			localStorage['showBalance'] = false;
+		}
+		console.log(showBalance.attr('ch'));
 		var requestObj = {refreshBadge: "true"};
 		if(localStorage['showBalance'] == 'true'){
 			requestObj['showBalance'] = 'show';
